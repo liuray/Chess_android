@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    tools:context="pengruijiwei.chess.com.chess.Activity_Conclusion">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#016db5"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tv_turn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:background="#707070"
+        android:paddingBottom="5dp"
+        android:paddingLeft="50dp"
+        android:paddingTop="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#F0EEEC" />
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#707070" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_btn"
+            android:onClick="next"
+            android:text="@string/next" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_btn"
+            android:onClick="pre"
+            android:text="@string/pre" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_btn"
+            android:onClick="back"
+            android:text="@string/back" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/blue_btn"
+            android:onClick="save"
+            android:text="@string/save" />
+
+    </LinearLayout>
+
+    <pengruijiwei.chess.com.view.View_Conclusion
+        android:id="@+id/sf_game"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_btns"
+        android:layout_below="@id/tv_turn"
+        android:layout_width="match_parent"
+        />
+
+</RelativeLayout>

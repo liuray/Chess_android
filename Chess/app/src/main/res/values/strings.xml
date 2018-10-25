@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back">Back</string>
+    <string name="resign">Resign</string>
+    <string name="draw">Draw</string>
+    <string name="pre">Prev</string>
+    <string name="app_name">Chess</string>
+    <string name="title">Chess</string>
+    <string name="play">New Game</string>
+    <string name="undo">Undo</string>
+    <string name="ai">AI</string>
+    <string name="next">Next</string>
+    <string name="record">Records</string>
+    <string name="contin">Continue</string>
+    <string name="exit">Exit</string>
+    <string name="action_settings">Settings</string>
+    <string name="save">Enter title</string>
+    <string name="by_title">By Title</string>
+    <string name="by_date">By Date</string>
+
+
+</resources>

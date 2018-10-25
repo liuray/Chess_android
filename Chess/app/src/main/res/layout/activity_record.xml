@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackground"
+    tools:context="pengruijiwei.chess.com.chess.Activity_Record">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/abc_input_method_navigation_guard"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#45ffffff" />
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:background="@color/abc_input_method_navigation_guard"
+        android:gravity="center"
+        android:text="@string/by_date"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/abc_secondary_text_material_dark"
+        android:backgroundTint="#4dffffff"
+        android:textStyle="bold|italic" />
+
+    <LinearLayout
+        android:id="@+id/ll_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/abc_input_method_navigation_guard"
+            android:onClick="byDate"
+            android:padding="5dp"
+            android:text="@string/by_date"
+            android:textSize="20sp"
+            android:backgroundTint="#3effffff"
+            android:textColor="@color/abc_secondary_text_material_dark" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@color/abc_input_method_navigation_guard"
+            android:onClick="byTitle"
+            android:padding="5dp"
+            android:text="@string/by_title"
+            android:textSize="20sp"
+            android:backgroundTint="#3effffff"
+            android:textColor="@color/abc_secondary_text_material_dark" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_btns"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_head" >
+    </ListView>
+
+</RelativeLayout>
